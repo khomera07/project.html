@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="./style/auth.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="auth-form-container">
+            <form action=""method="get">
+                <div class="form-group"> <!--ეს კლასი შეიქმნა იმისთვის რომ მომხმარებლის სახელი და პაროლი css-ში ერთმანეთს დავაშოროთ-->
+                    <label class="text-input-label" 
+                    for="name">სახელი</label>
+                    <input class="text-input" type="text" name="name" id="name" 
+                    placeholder="შეიყვანეთ სახელი">
+                </div>
+                <div class="form-group"> 
+                    <label class="text-input-label" 
+                    for="surname">გვარი</label>
+                    <input class="text-input" type="text" name="surname" id="surname" 
+                    placeholder="შეიყვანეთ გვარი">
+                </div>
+                <div class="form-group"> <!--ელ ფოსტის შექმნა-->
+                    <label class="text-input-label" 
+                    for="userEmail">ელ-ფოსტა</label>
+                    <input class="text-input" type="email" name="userEmail" id="userEmail" 
+                    placeholder="შეიყვანეთ ელ ფოსტა">
+                </div>
+                <div class="form-group"> <!--დაბადების თარიღი-->
+                    <label class="text-input-label" 
+                    for="birthDate">დაბადების თარიღი</label>
+                    <input class="text-input" type="date" name="birthDate" id="birthDate" 
+                    placeholder="შეიყვანეთ გვარი">
+                </div>
+                <div class="form-group"> <!--დაბადების ადგილის მითითება-->
+                    <label class="text-input-label" 
+                    for="surname">დაბადების ადგილი</label>
+                    <select class="birth-locations">
+                        <option>საქართველო</option>
+                        <option>საბერძნეთი</option>
+                        <option>დიდი ბრიტანეთი</option>
+                        <option>ამერიკის შეერთებული შტატები</option>
+                        <option>მექსიკა</option>
+                        <option>ბრაზილია</option>
+                        <option>ესტონეთი</option>
+                        <option>პოლონეთი</option>
+                        <option>გერმანია</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group"> <!--სქესის დამატება-->
+                    <div class="sex-container">
+                        <input type="radio" name="sex" id="mail">
+                        <label for="male">კაცი</label>
+                    </div>
+                    <div class="sex-container">
+                        <input type="radio" name="sex" id="female">
+                        <label for="male">ქალი</label>
+
+                    </div>
+                    <div class="sex-container">
+                        <input type="radio" name="sex" id="other">
+                        <label for="male">სხვა</label>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <div>                    
+                        <label class="text-input-label" 
+                        for="pass">პაროლი</label>
+                        <input class="text-input" type="password" name="pass" id="pass"> 
+                    </div>
+                    <div>                    
+                        <label class="text-input-label" 
+                        for="passReply">გაიმეოროთ პაროლი</label>
+                        <input class="text-input" type="password" name="passReply" id="pass"> 
+                    </div>
+                </div>
+                <button class="btn btn-primary w-100 mb-15">რეგისტრაცია</button>
+                <a class="btn btn-link" href="./auth.html">ავტორიზაცია</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
